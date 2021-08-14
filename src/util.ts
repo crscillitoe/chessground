@@ -2,7 +2,7 @@ import * as cg from './types';
 
 export const invRanks: readonly cg.Rank[] = [...cg.ranks].reverse();
 
-export const allKeys: readonly cg.Key[] = Array.prototype.concat(...cg.files.map(c => cg.ranks.map(r => c + r)));
+export const allKeys: readonly cg.Key[] = Array.prototype.concat(...cg.files.slice(0,8).map(c => cg.ranks.slice(0,8).map(r => c + r)));
 
 export const pos2key = (pos: cg.Pos): cg.Key => allKeys[8 * pos[0] + pos[1]];
 

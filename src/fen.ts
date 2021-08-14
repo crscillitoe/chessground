@@ -48,6 +48,8 @@ export function read(fen: cg.FEN): cg.Pieces {
           pieces.set(pos2key([col, row]), {
             role: roles[role],
             color: c === role ? 'black' : 'white',
+            name: "bob",
+            shortName: "the builder"
           });
           ++col;
         }
