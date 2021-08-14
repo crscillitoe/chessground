@@ -1,6 +1,5 @@
 import { Team, TeamOption } from "./Team";
 import { Move } from "./Move";
-import { Board } from "./Board";
 import { GameState } from "./GameState";
 import { Game } from "./Game";
 import { Coordinate } from "./Coordinate";
@@ -9,7 +8,6 @@ import { GameModeShared } from "./GameModes/GameModeShared";
 import { King } from "./Pieces/Standard/King";
 import { Pawn } from "./Pieces/Standard/Pawn";
 import { Queen } from "./Pieces/Standard/Queen";
-import { DoubleMove } from "./GameModes/DoubleMove";
 
 export abstract class GameMode {
   /**
