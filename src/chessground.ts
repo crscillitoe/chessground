@@ -7,6 +7,7 @@ import * as events from './events';
 import { render, renderResized, updateBounds } from './render';
 import * as svg from './svg';
 import * as util from './util';
+import { GameMode } from '../chess/src/lib/chesslib/GameMode';
 
 export function Chessground(element: HTMLElement, game: GameMode, config?: Config): Api {
   const maybeState: State | HeadlessState = defaults();
